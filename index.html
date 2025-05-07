@@ -17,15 +17,15 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-   <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
   </head>
   <body class="m-0 p-0 box-border">
-    <header class="bg-[#FF6200] flex justify-center">
+    <header class="bg-[#FF6200] flex justify-center relative">
       <div
-        class="flex flex-row items-center py-[0.3rem] w-[75%] justify-between"
+        class="flex flex-row w-[75%] items-center py-[0.3rem] justify-between"
       >
         <!-- navegação -->
         <div class="flex flex-row text-white items-center">
@@ -42,9 +42,9 @@
             <ul class="flex flex-row gap-x-[1.5rem]">
               <li>
                 <ul>
-                  <div class="flex flex-row items-center relative">
+                  <div class="flex flex-row items-center">
                     <button
-                      class="text-[20px] flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      class="text-[20px] relative flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
                     >
                       Para você
 
@@ -128,11 +128,11 @@
                 </ul>
               </li>
 
-              <li>
+              <li class="">
                 <ul>
-                  <div class="flex flex-row items-center relative">
+                  <div class="flex flex-row items-center">
                     <button
-                      class="text-[20px] flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      class="text-[20px] flex flex-row items-center relative cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
                     >
                       Para empresas
 
@@ -144,70 +144,160 @@
                     </button>
 
                     <!-- Coluna Brena -->
-                    <div class=>
-                      <a href="#"></a>
+                    <div
+                      class="w-screen absolute justify-center items-center left-0 top-[4.6rem] flex flex-col bg-[#F1F2F4] text-black"
+                    >
+                      <div
+                        class="flex flex-col items-center pb-6 w-[75%] pt-[4rem] gap-y-[2rem]"
+                      >
+                        <div class="flex flex-row items-center self-start">
+                          <a
+                            href="#"
+                            class="text-[#106eb0] font-semibold text-[1.1rem] pr-3"
+                            >Acessar página Urutau Empresas <span></span
+                          ></a>
+                          <svg
+                            class="h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="#0b64b0"
+                              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                            />
+                          </svg>
+                        </div>
 
-                      <div>
-                        <div>
-                          <h2>Conheça</h2>
+                        <div class="flex justify-between w-[100%]">
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">Conheça</h2>
 
-                          <div>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
+                            <div class="flex flex-col gap-y-3 w-[13rem]">
+                              <a href="#">Conta Juridica</a>
+                              <a href="#">Laranjinha</a>
+                              <a href="#">Emprestimo empresarial</a>
+                              <a href="#">Pagamentos e recebimentos</a>
+                              <a href="#">Cartão empresarial</a>
+                              <a href="#">Seguros</a>
+                              <a href="#">Câmbio e comércio exterior</a>
+                              <a href="#">Investimentos para empresas</a>
+                              <a href="#">Consórcio</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6 w-[10rem]">
+                            <h2 class="font-semibold text-[1.1rem]">E mais</h2>
+
+                            <div class="flex flex-col gap-y-3">
+                              <a href="#">Renegociação</a>
+                              <a href="#">Tarifas</a>
+                              <a href="#">Segurança e fraudes</a>
+                              <a href="#">Boletos</a>
+                              <a href="#">Comprovantes</a>
+                              <a href="#">Blog Urutau Empresas</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">
+                              Serviços Exclusivos
+                            </h2>
+
+                            <div
+                              class="font-semibold w-[20rem] flex flex-col gap-y-5 text-[1.2rem]"
+                            >
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau BBA</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Clientes Institucionais</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Securities Services</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
-                        <div>
-                          <h2></h2>
+                        <div
+                          class="flex flex-row w-[100%] items-center justify-between h-15 bg-white border-t-1 border-b-1 border-gray-300 self-start"
+                        >
+                          <div class="gap-x-4 flex">
+                            <img
+                              class="h-7 opacity-70"
+                              src="https://icons.iconarchive.com/icons/fa-team/fontawesome-regular/64/FontAwesome-Regular-User-icon.png"
+                            />
+                            <h2
+                              class="text-[1.2rem] font-semibold text-gray-600"
+                            >
+                              Abra sua conta no Urutau
+                            </h2>
+                          </div>
 
                           <div>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
-                            <a href="#"></a>
+                            <svg
+                              class="h-4 opacity-40"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                fill="#000000"
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                              />
+                            </svg>
                           </div>
                         </div>
-
-                        <div>
-                          <h2></h2>
-
-                          <div>
-                            <div>
-                              <a href="#"></a>
-                              <img src="" alt="" />
-                            </div>
-                            <div>
-                              <a href="#"></a>
-                              <img src="" alt="" />
-                            </div>
-                            <div>
-                              <a href="#"></a>
-                              <img src="" alt="" />
-                            </div>
-                            <div>
-                              <a href="#"></a>
-                              <img src="" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div>
-                        <div>
-                          <img src="" alt="" />
-                          <h2></h2>
-                        </div>
-
-                        <img src="" alt="" />
                       </div>
                     </div>
                   </div>
@@ -218,7 +308,7 @@
                 <ul>
                   <div class="flex flex-row items-center relative">
                     <button
-                      class="text-[20px] flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      class="text-[20px] relative flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
                     >
                       Ajuda
 
@@ -353,77 +443,5 @@
       </div>
     </header>
     <!-- Coluna Brena -->
-   
-                    <div class="h-[112] flex items-center flex-col justify-between bg-[#F1F2F4] text-black pt-13">
-                      
-                      <div class="flex items-center pb-6">
-                       <a href="#" class="text-[#106eb0] font-semibold text-[1.1rem] pr-3">Acessar página Urutau Empresas <span></span></a>
-                       <svg class="h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#0b64b0" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-
-                      </div>
-
-                      <div class="flex gap-x-60 ">
-                        <div class="flex flex-col gap-6">
-                          <h2 class="font-semibold text-[1.1rem] ">Conheça</h2>
-
-                          <div class="flex flex-col gap-3">
-                            <a href="#">Conta Juridica</a>
-                            <a href="#">Laranjinha</a>
-                            <a href="#">Emprestimo empresarial</a>
-                            <a href="#">Pagamentos e recebimentos</a>
-                            <a href="#">Cartão empresarial</a>
-                            <a href="#">Seguros</a>
-                            <a href="#">Câmbio e comércio exterior</a>
-                            <a href="#">Investimentos para empresas</a>
-                            <a href="#">Consórcio</a>
-                          </div>
-                        </div>
-
-                        <div class="flex flex-col gap-6">
-                          <h2 class="font-semibold text-[1.1rem] ">E mais</h2>
-
-                          <div class="flex flex-col gap-3">
-                            <a href="#">Renegociação</a>
-                            <a href="#">Tarifas</a>
-                            <a href="#">Segurança e fraudes</a>
-                            <a href="#">Boletos</a>
-                            <a href="#">Comprovantes</a>
-                            <a href="#">Blog Urutau Empresas</a>
-                          </div>
-                        </div>
-
-                        <div class="flex flex-col gap-6">
-                          <h2 class="font-semibold text-[1.1rem] ">Serviços Exclusivos</h2>
-
-                          <div class="font-semibold flex flex-col gap-5 text-[1.2rem]">
-                            <div class="flex items-center gap-58 border-b-1 border-gray-300 pb-3">
-                              <a href="#">Urutau BBA</a>
-                              <svg class="h-3 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                            </div>
-                            <div class="flex items-center gap-20 border-b-1 border-gray-300 pb-3">
-                              <a href="#">Urutau Clientes Institucionais</a>
-                              <svg class="h-3 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                            </div>
-                            <div class="flex items-center gap-27 border-b-1 border-gray-300 pb-3">
-                              <a href="#">Urutau Securities Services</a>
-                              <svg class="h-3 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                            </div>
-                            <div class="flex items-center gap-68 border-b-1 border-gray-300 pb-3">
-                              <a href="#">Urutau</a>
-                              <svg class="h-3 opacity-70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="flex items-center justify-between h-15 bg-white w-[100%] border-t-1 border-b-1 border-gray-300">
-                        <div class="gap-x-4 flex" >
-                          <img class="h-7 opacity-70" src="https://icons.iconarchive.com/icons/fa-team/fontawesome-regular/64/FontAwesome-Regular-User-icon.png"  >
-                          <h2 class="text-[1.2rem] font-semibold text-gray-600">Abra sua conta no Urutau</h2>
-                        </div>
-
-                       <svg class="h-4 opacity-40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#000000" d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-                      </div>
-                    </div>
   </body>
 </html>
