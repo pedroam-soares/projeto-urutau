@@ -23,9 +23,9 @@
     />
   </head>
   <body class="m-0 p-0 box-border">
-    <header class="bg-[#FF6200] flex justify-center relative">
+    <header class="bg-[#022C63] flex justify-center relative">
       <div
-        class="flex flex-row w-[75%] items-center py-[0.3rem] justify-between"
+        class="flex flex-row w-[60%] items-center py-[0.3rem] justify-between"
       >
         <!-- navegação -->
         <div class="flex flex-row text-white items-center">
@@ -45,6 +45,7 @@
                   <div class="flex flex-row items-center">
                     <button
                       class="text-[20px] relative flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      onclick="toggleVisibility('div-para-voce', 'seta-para-voce' , 'div-para-empresas', 'seta-empresas' ,'div-ajuda','seta-ajuda')"
                     >
                       Para você
 
@@ -52,10 +53,168 @@
                         src="./assets/seta.png"
                         alt=""
                         class="w-[15px] h-[10px] ml-3"
+                        id="seta-para-voce"
                       />
                     </button>
 
                     <!-- Coluna Thiago -->
+                    <div
+                      id="div-para-voce"
+                      class="w-screen hidden absolute justify-center items-center left-0 top-[4.9rem] flex-col bg-[#F1F2F4] text-black"
+                    >
+                      <div
+                        class="flex flex-col items-center pb-6 w-[60%] pt-[3rem] gap-y-[2rem]"
+                      >
+                        <div class="flex flex-row items-center self-start">
+                          <a
+                            href="#"
+                            class="text-[#106eb0] font-semibold text-[1.1rem] pr-3"
+                            >PARA VOCÊ <span></span
+                          ></a>
+                          <svg
+                            class="h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="#0b64b0"
+                              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                            />
+                          </svg>
+                        </div>
+
+                        <div class="flex justify-between w-[100%]">
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">Conheça</h2>
+
+                            <div class="flex flex-col gap-y-3 w-[13rem]">
+                              <a href="#">Conta Juridica</a>
+                              <a href="#">Laranjinha</a>
+                              <a href="#">Emprestimo empresarial</a>
+                              <a href="#">Pagamentos e recebimentos</a>
+                              <a href="#">Cartão empresarial</a>
+                              <a href="#">Seguros</a>
+                              <a href="#">Câmbio e comércio exterior</a>
+                              <a href="#">Investimentos para empresas</a>
+                              <a href="#">Consórcio</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6 w-[10rem]">
+                            <h2 class="font-semibold text-[1.1rem]">E mais</h2>
+
+                            <div class="flex flex-col gap-y-3">
+                              <a href="#">Renegociação</a>
+                              <a href="#">Tarifas</a>
+                              <a href="#">Segurança e fraudes</a>
+                              <a href="#">Boletos</a>
+                              <a href="#">Comprovantes</a>
+                              <a href="#">Blog Urutau Empresas</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">
+                              Serviços Exclusivos
+                            </h2>
+
+                            <div
+                              class="font-semibold w-[20rem] flex flex-col gap-y-5 text-[1.2rem]"
+                            >
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau BBA</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Clientes Institucionais</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Securities Services</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="flex flex-row w-[100%] items-center justify-between h-15 bg-white border-t-1 border-b-1 border-gray-300 self-start"
+                        >
+                          <div class="gap-x-4 flex">
+                            <img
+                              class="h-7 opacity-70"
+                              src="https://icons.iconarchive.com/icons/fa-team/fontawesome-regular/64/FontAwesome-Regular-User-icon.png"
+                            />
+                            <h2
+                              class="text-[1.2rem] font-semibold text-gray-600"
+                            >
+                              Abra sua conta no Urutau
+                            </h2>
+                          </div>
+
+                          <div>
+                            <svg
+                              class="h-4 opacity-40"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                fill="#000000"
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div id="div-para-voce">
                       <div>
                         <div>
@@ -133,6 +292,7 @@
                   <div class="flex flex-row items-center">
                     <button
                       class="text-[20px] flex flex-row items-center relative cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      onclick="toggleVisibility('div-para-empresas', 'seta-empresas' , 'div-para-voce', 'seta-para-voce','div-ajuda','seta-ajuda')"
                     >
                       Para empresas
 
@@ -140,15 +300,17 @@
                         src="./assets/seta.png"
                         alt=""
                         class="w-[15px] h-[10px] ml-3"
+                        id="seta-empresas"
                       />
                     </button>
 
                     <!-- Coluna Brena -->
                     <div
-                      class="w-screen absolute justify-center items-center left-0 top-[4.6rem] flex flex-col bg-[#F1F2F4] text-black"
+                      id="div-para-empresas"
+                      class="w-screen hidden absolute justify-center items-center left-0 top-[4.9rem] flex-col bg-[#F1F2F4] text-black"
                     >
                       <div
-                        class="flex flex-col items-center pb-6 w-[75%] pt-[4rem] gap-y-[2rem]"
+                        class="flex flex-col items-center pb-6 w-[60%] pt-[3rem] gap-y-[2rem]"
                       >
                         <div class="flex flex-row items-center self-start">
                           <a
@@ -306,9 +468,10 @@
 
               <li>
                 <ul>
-                  <div class="flex flex-row items-center relative">
+                  <div class="flex flex-row items-center">
                     <button
                       class="text-[20px] relative flex flex-row items-center cursor-pointer h-[4.3rem] font-medium after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-2 after:h-[4.5px] after:rounded-lg after:w-0 hover:after:w-[1.2rem] after:bg-[#ffffff] after:transition-all after:duration-300"
+                      onclick="toggleVisibility('div-ajuda', 'seta-ajuda' , 'div-para-empresas', 'seta-empresas' ,'div-para-voce','seta-para-voce')"
                     >
                       Ajuda
 
@@ -316,8 +479,167 @@
                         src="./assets/seta.png"
                         alt=""
                         class="w-[15px] h-[10px] ml-3"
+                        id="seta-ajuda"
                       />
                     </button>
+
+                    <div
+                      id="div-ajuda"
+                      class="w-screen hidden absolute justify-center items-center left-0 top-[4.9rem] flex-col bg-[#F1F2F4] text-black"
+                    >
+                      <div
+                        class="flex flex-col items-center pb-6 w-[60%] pt-[3rem] gap-y-[2rem]"
+                      >
+                        <div class="flex flex-row items-center self-start">
+                          <a
+                            href="#"
+                            class="text-[#106eb0] font-semibold text-[1.1rem] pr-3"
+                            >AJUDA <span></span
+                          ></a>
+                          <svg
+                            class="h-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              fill="#0b64b0"
+                              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                            />
+                          </svg>
+                        </div>
+
+                        <div class="flex justify-between w-[100%]">
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">Conheça</h2>
+
+                            <div class="flex flex-col gap-y-3 w-[13rem]">
+                              <a href="#">Conta Juridica</a>
+                              <a href="#">Laranjinha</a>
+                              <a href="#">Emprestimo empresarial</a>
+                              <a href="#">Pagamentos e recebimentos</a>
+                              <a href="#">Cartão empresarial</a>
+                              <a href="#">Seguros</a>
+                              <a href="#">Câmbio e comércio exterior</a>
+                              <a href="#">Investimentos para empresas</a>
+                              <a href="#">Consórcio</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6 w-[10rem]">
+                            <h2 class="font-semibold text-[1.1rem]">E mais</h2>
+
+                            <div class="flex flex-col gap-y-3">
+                              <a href="#">Renegociação</a>
+                              <a href="#">Tarifas</a>
+                              <a href="#">Segurança e fraudes</a>
+                              <a href="#">Boletos</a>
+                              <a href="#">Comprovantes</a>
+                              <a href="#">Blog Urutau Empresas</a>
+                            </div>
+                          </div>
+
+                          <div class="flex flex-col gap-y-6">
+                            <h2 class="font-semibold text-[1.1rem]">
+                              Serviços Exclusivos
+                            </h2>
+
+                            <div
+                              class="font-semibold w-[20rem] flex flex-col gap-y-5 text-[1.2rem]"
+                            >
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau BBA</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Clientes Institucionais</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau Securities Services</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                              <div
+                                class="flex items-center justify-between border-b-1 border-gray-300 pb-3"
+                              >
+                                <a href="#">Urutau</a>
+                                <svg
+                                  class="h-3 opacity-70"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 320 512"
+                                >
+                                  <path
+                                    fill="#000000"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                  />
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="flex flex-row w-[100%] items-center justify-between h-15 bg-white border-t-1 border-b-1 border-gray-300 self-start"
+                        >
+                          <div class="gap-x-4 flex">
+                            <img
+                              class="h-7 opacity-70"
+                              src="https://icons.iconarchive.com/icons/fa-team/fontawesome-regular/64/FontAwesome-Regular-User-icon.png"
+                            />
+                            <h2
+                              class="text-[1.2rem] font-semibold text-gray-600"
+                            >
+                              Abra sua conta no Urutau
+                            </h2>
+                          </div>
+
+                          <div>
+                            <svg
+                              class="h-4 opacity-40"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 320 512"
+                            >
+                              <path
+                                fill="#000000"
+                                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     <!-- Coluna Stallone -->
                     <div>
@@ -435,13 +757,13 @@
             </button>
             <a
               href="#"
-              class="flex items-center justify-center text-[20px] px-6 border-[1px] rounded-xl h-[3.2rem] font-medium hover:bg-[white] hover:text-[#FF6200]"
+              class="flex items-center justify-center text-[20px] px-6 border-[1px] rounded-xl h-[3.2rem] font-medium hover:bg-[white] hover:text-[#022C63]"
               >Abra sua conta</a
             >
           </div>
         </div>
       </div>
     </header>
-    <!-- Coluna Brena -->
+    <script src="script.js"></script>
   </body>
 </html>
